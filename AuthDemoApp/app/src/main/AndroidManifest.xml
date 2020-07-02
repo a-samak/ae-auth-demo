@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <tools:validation testUrl="https://draftdemodomain.com/" />
+            <tools:validation testUrl="https://draftdemodomain.com/auth" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,8 @@
 
                 <data
                     android:scheme="https"
-                    android:host="draftdemodomain.com" />
+                    android:host="draftdemodomain.com"
+                    android:path="/auth"/>
             </intent-filter>
         </activity>
     </application>

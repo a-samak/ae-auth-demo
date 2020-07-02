@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onLaunchClick(view: View) {
-        val url = "https://draftdemodomain.com/auth-token"
+        val url = "https://draftdemodomain.com/authenticate.html"
         val builder = CustomTabsIntent.Builder()
         val customTabsIntent = builder.build();
         customTabsIntent.launchUrl(this, Uri.parse(url));
